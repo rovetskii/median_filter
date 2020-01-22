@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="image_filter.Image">
+  <grid id="27dc6" binding="main_panel" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="50" left="50" bottom="50" right="50"/>
+    <constraints>
+      <xy x="-15" y="20" width="1695" height="929"/>
+    </constraints>
+    <properties>
+      <background color="-1769473"/>
+    </properties>
+    <border type="none">
+      <font/>
+      <title-color color="-16777216"/>
+    </border>
+    <children>
+      <component id="dfcdd" class="javax.swing.JButton" binding="grayscale_image">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="50"/>
+            <preferred-size width="300" height="51"/>
+            <maximum-size width="300" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12543332"/>
+          <enabled value="false"/>
+          <font name="Georgia" size="16" style="3"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="10"/>
+          <label value="Сіре зображення"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <text value="Сіре зображення"/>
+        </properties>
+      </component>
+      <component id="3e6f9" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Georgia" size="26" style="3"/>
+          <horizontalAlignment value="10"/>
+          <horizontalTextPosition value="10"/>
+          <text value="Оригінальне зображення"/>
+        </properties>
+      </component>
+      <component id="27e2c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Georgia" size="26" style="3"/>
+          <horizontalAlignment value="10"/>
+          <horizontalTextPosition value="10"/>
+          <text value="Зашумлене зображення"/>
+        </properties>
+      </component>
+      <component id="3fd58" class="javax.swing.JButton" binding="load_image">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="50"/>
+            <preferred-size width="300" height="50"/>
+            <maximum-size width="300" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12543332"/>
+          <font name="Georgia" size="16" style="3"/>
+          <foreground color="-1"/>
+          <label value="Завантажити зображення"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <selected value="false"/>
+          <text value="Завантажити зображення"/>
+        </properties>
+      </component>
+      <component id="37c66" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Georgia" size="26" style="3"/>
+          <horizontalAlignment value="10"/>
+          <horizontalTextPosition value="10"/>
+          <text value="Медіанна фільтрація"/>
+        </properties>
+      </component>
+      <component id="89cc" class="javax.swing.JComboBox" binding="size_comboBox">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="50"/>
+            <preferred-size width="300" height="50"/>
+            <maximum-size width="300" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12543332"/>
+          <enabled value="false"/>
+          <font name="Georgia" size="16" style="3"/>
+          <foreground color="-1"/>
+          <inheritsPopupMenu value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Фільтр 3х3"/>
+            <item value="Фільтр 5х5"/>
+            <item value="Фільтр 7х7"/>
+          </model>
+          <popupVisible value="false"/>
+          <selectedIndex value="0"/>
+          <toolTipText value=""/>
+          <verifyInputWhenFocusTarget value="true"/>
+        </properties>
+      </component>
+      <component id="5a787" class="javax.swing.JLabel" binding="original_image">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="500" height="500"/>
+            <preferred-size width="500" height="500"/>
+            <maximum-size width="500" height="500"/>
+          </grid>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="e32ea" class="javax.swing.JSlider" binding="noise_slider">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="500" height="-1"/>
+            <preferred-size width="300" height="50"/>
+            <maximum-size width="500" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1769473"/>
+          <enabled value="false"/>
+          <extent value="0"/>
+          <focusCycleRoot value="true"/>
+          <focusTraversalPolicyProvider value="true"/>
+          <font name="Arial Unicode MS" size="12" style="1"/>
+          <foreground color="-16777216"/>
+          <inheritsPopupMenu value="false"/>
+          <inverted value="false"/>
+          <majorTickSpacing value="5"/>
+          <maximum value="50"/>
+          <minorTickSpacing value="1"/>
+          <opaque value="true"/>
+          <orientation value="0"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <snapToTicks value="false"/>
+          <value value="0"/>
+          <valueIsAdjusting value="true"/>
+        </properties>
+      </component>
+      <component id="c7a6e" class="javax.swing.JButton" binding="graphic_noise_button">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="50"/>
+            <preferred-size width="300" height="50"/>
+            <maximum-size width="300" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12543332"/>
+          <enabled value="false"/>
+          <font name="Georgia" size="16" style="3"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="10"/>
+          <label value="Сигнал/шум"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <selected value="false"/>
+          <text value="Сигнал/шум"/>
+        </properties>
+      </component>
+      <component id="28cc0" class="javax.swing.JButton" binding="graphic_button">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="50"/>
+            <preferred-size width="300" height="50"/>
+            <maximum-size width="300" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12543332"/>
+          <enabled value="false"/>
+          <font name="Georgia" size="16" style="3"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="10"/>
+          <label value="Сигнал/шум"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <selected value="false"/>
+          <text value="Сигнал/шум"/>
+        </properties>
+      </component>
+      <component id="4ee8" class="javax.swing.JLabel" binding="filter_image">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="500" height="500"/>
+            <preferred-size width="500" height="500"/>
+            <maximum-size width="500" height="500"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="4"/>
+          <horizontalTextPosition value="0"/>
+          <opaque value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <vspacer id="2530a">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <preferred-size width="-1" height="20"/>
+            <maximum-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="e35d">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="10"/>
+            <preferred-size width="-1" height="10"/>
+            <maximum-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="4ae58">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="10"/>
+            <preferred-size width="-1" height="10"/>
+            <maximum-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="e56d1" class="javax.swing.JLabel" binding="noise_image">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="500" height="500"/>
+            <preferred-size width="500" height="500"/>
+            <maximum-size width="500" height="500"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1769473"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value=""/>
+          <verifyInputWhenFocusTarget value="false"/>
+          <verticalAlignment value="0"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
